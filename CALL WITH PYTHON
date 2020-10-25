@@ -3,10 +3,10 @@ from twilio.rest import TwilioRestClient
 
 # Twilio phone number goes here. Grab one at https://twilio.com/try-twilio
 # and use the E.164 format, for example: "+12025551234"
-TWILIO_PHONE_NUMBER = ""
+TWILIO_PHONE_NUMBER = " "
 
 # list of one or more phone numbers to dial, in "+19732644210" format
-DIAL_NUMBERS = ["",]
+DIAL_NUMBERS = [" ",]
 
 # URL location of TwiML instructions for how to handle the phone call
 TWIML_INSTRUCTIONS_URL = \
