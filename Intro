@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="css\first.css" style="text/css">
+	<title>My coursera HTML project</title>
+</head>
+<body>
+	<h1>Snata Gayan</h1>
+	<nav>
+		<a href="">One</a>
+		<a href="">Two</a>
+		<a href="">Three</a>
+		<a href="">Four</a>
+	</nav>
+	<section>
+	<h2>Favourite Foods</h2>
+	<ul>
+		<li>Chicken kawab</li>
+		<li>Chaat</li>
+		<li>Chicken Momos</li>
+		<li>Noodles</li>
+	</ul>
+	</section>
+	<section>
+	<h2>Achievements</h2>
+	Progress in course(100%)<progress value="100" max="100">100%</progress><br>
+	Progress in the Specialization capstone(20%)<progress value="20" max="100">20%</progress><br>
+	Progress in life goals(25%)<progress value="25" max="100">25%</progress><br>
+	</section>
+	<section>
+	<h2>More About Me</h2>
+	<details>
+		<summary>My childhood</summary>
+		My childhood was amazing in Angul.I had amazing friends.
+	</details>
+	</section>
+	<footer>
+	<img src="http://www.intro-webdesign.com/images/newlogo.png" alt="w4de pic">
+	This page was created by Snata Gayan &amp Collen van Lent.To learn more about web design, visit <a href="http://www.intro-webdesign.com">Intro to web design</a>.
+	</footer>
+ 
+	
+
+</body>
+</html>
