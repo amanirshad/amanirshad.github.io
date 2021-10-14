@@ -2580,7 +2580,12 @@ input, select, textarea {
 		.icon.brands:before {
 			font-family: 'Font Awesome 5 Brands';
 		}
-
+		h3{
+			align:center;
+			padding:10px;
+			margin:0px 10px 0px 10px;
+			 box-shadow: 0 2px 4px -1px rgba(0,0,0,.2), 0 4px 5px 0 rgba(0,0,0,.14), 0 1px 10px 0 rgba(0,0,0,.12);
+		}
 /* Image */
 
 	.image {
@@ -3738,6 +3743,7 @@ input, select, textarea {
 			-ms-flex-shrink: 0;
 			flex-shrink: 0;
 			margin-bottom: 0;
+			box-shadow: 0 2px 4px -1px rgba(0,0,0,.2), 0 4px 5px 0 rgba(0,0,0,.14), 0 1px 10px 0 rgba(0,0,0,.12);
 		}
 
 		@media screen and (max-width: 980px) {
@@ -3845,6 +3851,7 @@ input, select, textarea {
 				-webkit-flex-grow: 0;
 				-ms-flex-grow: 0;
 				flex-grow: 0;
+				box-shadow: 0 2px 4px -1px rgba(0,0,0,.2), 0 4px 5px 0 rgba(0,0,0,.14), 0 1px 10px 0 rgba(0,0,0,.12);
 			}
 
 			#main > .posts > * {
@@ -3862,6 +3869,13 @@ input, select, textarea {
 				border-style: solid;
 				border-top-width: 2px;
 				text-align: center;
+			}
+
+			#main > .posts > article > .image:hover {
+				transition: all .2s ease-out;
+				filter:hue-rotate(-47deg);
+				transform: scale(1.1);
+			  overflow-x: hidden;
 			}
 
 				#main > .posts > article > :last-child {
