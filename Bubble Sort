@@ -1,25 +1,31 @@
-# Python program for implementation of Bubble Sort 
+from twilio.rest import TwilioRestClient
 
-def bubbleSort(arr): 
-	n = len(arr) 
 
-	# Traverse through all array elements 
-	for i in range(n): 
+# Twilio phone number goes here. Grab one at https://twilio.com/try-twilio
+# and use the E.164 format, for example: "+12025551234"
+TWILIO_PHONE_NUMBER = " "
 
-		# Last i elements are already in place 
-		for j in range(0, n-i-1): 
+# list of one or more phone numbers to dial, in "+19732644210" format
+DIAL_NUMBERS = [" ",]
 
-			# traverse the array from 0 to n-i-1 
-			# Swap if the element found is greater 
-			# than the next element 
-			if arr[j] > arr[j+1] : 
-				arr[j], arr[j+1] = arr[j+1], arr[j] 
+# URL location of TwiML instructions for how to handle the phone call
+TWIML_INSTRUCTIONS_URL = \
+  "http://static.fullstackpython.com/phone-calls-python.xml"
 
-# Driver code to test above 
-arr = [64, 34, 25, 12, 22, 11, 90] 
+# replace the placeholder values with your Account SID and Auth Token
+# found on the Twilio Console: https://www.twilio.com/console
+client = TwilioRestClient("ACxxxxxxxxxx", "yyyyyyyyyy")
 
-bubbleSort(arr) 
 
-print ("Sorted array is:") 
-for i in range(len(arr)): 
-	print ("%d" %arr[i]), 
+def dial_numbers(numbers_list):
+    """Dials one or more phone numbers from a Twilio phone number."""
+    for number in numbers_list:
+        print("Dialing " + number)
+        # set the method to "GET" from default POST because Amazon S3 only
+        # serves GET requests on files. Typically POST would be used for apps
+        client.calls.create(to=number, from_=TWILIO_PHONE_NUMBER,
+                            url=TWIML_INSTRUCTIONS_URL, method="GET")
+
+
+if __name__ == "__main__":
+    dial_numbers(DIAL_NUMBERS)
