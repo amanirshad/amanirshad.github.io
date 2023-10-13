@@ -1,0 +1,95 @@
+<html>
+    <head>
+        <link rel="stylesheet"  type="text/css" href="PracticeForm.css">
+        <title>Sample registration page</title>
+        <hr color="green" size="7">
+        <center><h1>A SAMPLE REGISTERATION PAGE</h1></center>
+        <hr color="green" size="7">
+        <section>
+            <form action="submit form.html">
+            <table border="1" align="center" width="50%">
+             <th colspan="2" style="color:red; background: mistyrose;";">Fill In The Details </th>
+             <tr>
+                 <td>Username</td>
+                 <td><input type="text" id="txtname" name="txtname" placeholder="enter your username" maxlength=12 required autofocus/></td>
+             </tr>
+             <tr><td>Password</td>
+                <td><input type="password" id="password" name="password" placeholder="enter password here"/>
+                </td> 
+            </tr>
+            <tr>
+                <td>Mobile</td>
+                <td>
+                    <input type="number" id="num" name="num" placeholder="enter number"/>
+                </td>
+            </tr>
+            <tr>
+                <td>Gender</td>
+                <td>
+                    <input type="radio" value="M" name="rdogender"/>Male
+                    <br>
+                    <input type="radio"  value="F" name="rdogender"/>Female
+                    <br>
+                    <input type="radio"   value="T"name="rdogender"/>Transgender
+                </td>
+            </tr>
+            <tr>
+                <td>Hobbies</td>
+                <td nowrap>
+                    <input type="checkbox" value="P" name="checkHobbies"/>Painting
+                    <input type="checkbox" value="D" name="checkHobbies"/>Dancing
+                    <input type="checkbox" value="S" name="checkHobbies"/>Singing
+                    <input type="checkbox" value="photo" name="checkHobbies"/>Photography
+                    <input type="checkbox" value="acting" name="checkHobbies"/>Acting
+                </td>
+            </tr>
+            <tr>
+                <td>Date Of Birth</td>
+                <td>
+                    <input type="date"  id="dob" name="dob"/>
+                </td>
+            </tr>
+            <tr>
+                <td>Contry</td>
+                <td>
+                    <select>
+                        <option>Singapore</option>
+                        <option>Thailand</option>
+                        <option>India</option>
+                        <option>Sweden</option>
+                        <option>USA</option>
+                        <option>France</option>
+
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Address </td>
+                <td><textarea id="address" name="address" ></textarea></td>
+            </tr>
+            <tr>
+                <td>Upload Picture </td>
+                <td>
+                    <input type="file" name="pic" id="pic"/>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Song
+                </td>
+                <td>
+                    <audio controls>
+                    <source src="songg.mp3" type="audio/mpeg"/>
+                    </audio>
+                </td>
+            </tr>
+            <tr>
+                <td><input type="submit" id="submit" value="register"/></td>
+                <td><input type="reset" id="reset" value="clear"/></td>
+            </tr>
+
+            </table>
+            </form>
+        </section>
+    </head>
+</html>
